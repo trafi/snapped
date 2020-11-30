@@ -4,7 +4,7 @@ import XCTest
 import SwiftUI
 import Snapped
 
-public class SnapSpec<S>: QuickSpec where S: PreviewProvider, S: Snapped {
+open class SnapSpec<S>: QuickSpec where S: PreviewProvider, S: Snapped {
 
     override public func spec() {
         describe(S.name) {
